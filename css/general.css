@@ -4,9 +4,54 @@
 box-sizing: border-box;
 }
 
+body {
+	background-image: url(../img/blood-splatter.jpg);
+	background-position: 60% 50%;
+}
+
+.flex-img {
+	display: inline-block;
+	width: 100%
+}
+
+.logo {
+	width: 25%;
+	display: inline-block;
+}
+
+header {
+	margin: 1em 4em;
+	background-color: #ed050b;
+	text-align: center;
+	font-family: 'Helvetica', sans-serif;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 2.5em;
+	margin: 0;
+	padding: 1em 0 0;
+}
+
+header h2 {
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0 0 1em;
+}
+
+
+form {
+	margin: 1em 4em;
+	background-color: #fff;
+	opacity: 0.95;
+	padding: 1.5em;
+}
+
 label {
 	display: block;
 	cursor: pointer;
+	margin: 1.5em 0 0;
 }
 
 input {
@@ -31,13 +76,14 @@ textarea {
 }
 
 button {
+	margin: 1em auto;
+	width: 100%;
 	font-size: 1.125rem;
-	padding: 1em;
+	padding: 0.75em;
 	border-radius: 10px;
-	border: 3px solid #00f;
-	background-image: linear-gradient(to bottom, #00f, #33e);
-	color: #fff;
-	font-weight: bold;
+	border: 3px solid #ed050b;
+	background-color: #ed050b;
+	color: #000;
 	cursor: pointer;
 }
 
@@ -48,4 +94,23 @@ button {
 
 .input-error {
 	border: 3px solid #f33;
+}
+
+.half {
+	width: 50%;
+	display: inline-block;
+}
+
+
+@media only screen and (max-width: 35em) {
+
+	header {
+		margin: 1em 0;
+	}
+
+	form {
+		margin: 1em 0;
+		padding: 1em 0.2em;
+	}
+
 }
